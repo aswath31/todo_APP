@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 import lombok.Data;
 
 @Entity
+
 @Data
 public class Task  {
 
@@ -15,4 +16,22 @@ public class Task  {
     private Long id;
     private String title;
     private boolean completed;
+
+    // Getter and Setter for completed
+    public boolean isCompleted() {
+        return completed;
+    }
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
+    }
+
+    // Getter and Setter for title
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 }
